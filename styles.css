@@ -156,9 +156,6 @@ p {
 }
 
 @media (max-width: 768px) {
-    body {
-        background-color: antiquewhite;
-    }
 
     .box:hover .sec {
         display: flex;
@@ -171,5 +168,9 @@ p {
 
     .margin-one {
         margin: 0 5rem;
+    }
+
+    .margin-two {
+        margin: 10px 0;
     }
 }
