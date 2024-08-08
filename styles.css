@@ -158,9 +158,11 @@ p {
 @media (max-width: 768px) {
 
     body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
+        overflow: auto;
+    }
+
+    section {
+        overflow: auto;
     }
 
     .box:hover .sec {
