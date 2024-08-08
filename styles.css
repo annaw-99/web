@@ -157,13 +157,18 @@ p {
 
 @media (max-width: 768px) {
 
-    .box:hover .sec {
-        display: flex;
-        gap: 1rem;
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
 
-    a:active {
-        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    .box:hover .sec {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    a:active, a:focus {
         box-shadow: inset 100px 0 0 0 lightgray;
     }
 
@@ -176,6 +181,7 @@ p {
     }
 
     .right-nav {
+        left: 50%;
         transform: translateX(-50%);
     }
 }
