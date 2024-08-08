@@ -45,6 +45,8 @@ p {
 
 .middle {
     position: absolute;
+    display: flex; 
+    align-items: center;
 }
 
 .left {
@@ -73,6 +75,10 @@ p {
 
 .enter {
     animation: enter 3s ease-out forwards;
+}
+
+.right-enter {
+    animation: right-enter 3s ease-out forwards;
 }
 
 .left-nav {
@@ -154,13 +160,24 @@ p {
     }
 }
 
+@keyframes right-enter {
+    0% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @media (max-width: 768px) {
     
     body {
-        overflow: auto;
-    }
-
-    section {
         overflow: auto;
     }
 
@@ -185,8 +202,7 @@ p {
         display: none;
     }
 
-    .scroll {
-        height: auto; 
-        overflow-y: visible;
+    .middle {
+        display: block; 
     }
 }
