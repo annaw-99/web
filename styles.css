@@ -82,10 +82,9 @@ p {
     padding: 20px 10px;
 }
 
-.right-nav {
+.bottom-nav {
     position: absolute;
     bottom: 0;
-    right: 0;
     padding: 20px 10px;
 }
 
@@ -156,7 +155,7 @@ p {
 }
 
 @media (max-width: 768px) {
-
+    
     body {
         overflow: auto;
     }
@@ -182,8 +181,12 @@ p {
         margin: 1.5rem 0;
     }
 
-    .right-nav {
-        left: 50%;
-        transform: translateX(-50%);
+    .hide {
+        display: none;
+    }
+
+    .scroll {
+        height: auto; 
+        overflow-y: visible;
     }
 }
