@@ -1,0 +1,159 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+a {
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 lightgray;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+    box-shadow: inset 100px 0 0 0 lightgray;
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.middle {
+    position: absolute;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    transform: rotate(90deg);
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    transform: rotate(270deg);
+}
+
+.top {
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+}
+
+.bottom {
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 0;
+}
+
+.enter {
+    animation: enter 3s ease-out forwards;
+}
+
+.left-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+}
+
+.right-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 10px;
+}
+
+.scroll {
+    height: 60vh;
+    width: 85vw; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    scroll-behavior: smooth;
+}
+
+.box {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    height: 15vh;
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.f-box {
+    border-top: 1px solid lightgray;
+}
+
+.box:hover {
+    transform: scale(1.3);
+}
+
+.first, .sec {
+    display: flex; 
+    align-items: center;
+}
+
+.box:hover .first {
+    display: none;
+}
+
+.box:hover .sec {
+    display: flex;
+    gap: 5rem;
+}
+
+.sec {
+    display: none;
+}
+
+@keyframes enter {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .box:hover .sec {
+        display: flex;
+        gap: 2rem;
+    }
+}
