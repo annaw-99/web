@@ -205,4 +205,8 @@ p {
     .middle {
         display: block; 
     }
+
+    .scroll::-webkit-scrollbar {
+        display: none;
+    }
 }
