@@ -135,6 +135,11 @@ p {
     display: none;
 }
 
+.no-dec:hover {
+    box-shadow: none;
+    transition: none;
+}
+
 @keyframes enter {
     0% {
         transform: translateX(-100vw);
@@ -150,10 +155,21 @@ p {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+    body {
+        background-color: antiquewhite;
+    }
 
     .box:hover .sec {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
+    }
+
+    a:active {
+        box-shadow: inset 100px 0 0 0 lightgray;
+    }
+
+    .margin-one {
+        margin: 0 5rem;
     }
 }
