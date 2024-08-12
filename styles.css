@@ -94,6 +94,11 @@ p {
     padding: 20px 10px;
 }
 
+.display-b {
+    display: flex; 
+    align-items: center;
+}
+
 .scroll {
     height: 60vh;
     width: 85vw; 
@@ -186,16 +191,16 @@ p {
         gap: 0.5rem;
     }
 
-    a:active, a:focus {
-        box-shadow: inset 100px 0 0 0 lightgray;
-    }
-
     .margin-one {
         margin: 0 5rem;
     }
 
     .margin-two {
         margin: 1.5rem 0;
+    }
+
+    .display-b {
+        display: block;
     }
 
     .hide {
