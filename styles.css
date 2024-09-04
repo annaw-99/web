@@ -16,10 +16,12 @@ body {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
   
 .scroller section {
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 section {
@@ -63,13 +65,13 @@ p {
 .left {
     position: absolute;
     left: 0;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
 }
 
 .right {
     position: absolute;
     right: 0;
-    transform: rotate(270deg);
+    transform: rotate(90deg);
 }
 
 .top {
