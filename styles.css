@@ -492,13 +492,14 @@ p {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 2s steps(11, end);
+    animation: typing 2s steps(12, end);
 }
 
 .typewriter::after {
     content: '|';
     position: absolute;
-    right: -10px;
+    right: -18px;
+    opacity: 0;
     animation: blink 0.75s step-end infinite;
 }
 
@@ -508,6 +509,6 @@ p {
 }
 
 @keyframes blink {
-    from, to { opacity: 0 }
+    0%, 100% { opacity: 0 }
     50% { opacity: 1 }
 }
