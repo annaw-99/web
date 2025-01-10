@@ -476,4 +476,8 @@ p {
         margin-bottom: 0;
         font-size: 1.1rem !important;
     }
+
+    .large-text {
+        font-size: 14px !important;
+    }
 }
