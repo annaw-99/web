@@ -6,82 +6,165 @@
     <title>annaw.com</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="scroller">
     <div class="container">
         <section id="home">
-        <div class="top margin-two">
-            <a href="#projects">/&nbsp;my-projects</a>
+        <div class="top margin-two terminal-text">
+            <a href="#projects" class="terminal-link">/&nbsp;my-projects</a>
         </div>
 
-        <div class="left">
-            <a href="#about-me">/&nbsp;about-me</a>
+        <div class="left terminal-text">
+            <a href="#about-me" class="terminal-link">/&nbsp;about-me</a>
         </div>
     
         <div class="middle">
-            <h1 class="enter" style="font-weight: bold;">
-            H&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;
+            <h1 class="enter terminal-text" style="font-weight: bold;">
+            H&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;O
             </h1>
-            <h1 class="enter" style="font-weight: bold;">
+            <h1 class="hide">&nbsp;&nbsp;&nbsp;</h1>
+            <h1 class="enter terminal-text" style="font-weight: bold;">
             T&nbsp;&nbsp;&nbsp;H&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;E
             </h1>
         </div>
 
-        <div class="right">
-            <h6 class="mb-0">/&nbsp;to-be-updated</h6>
+        <div class="right terminal-text">
+            <a href="#my-skills" class="terminal-link">/&nbsp;my-skills</a>
         </div>
 
-        <div class="bottom margin-two">
-            <h6>&copy 2024 All Rights Reserved.</h6>
+        <div class="bottom margin-two terminal-text">
+            <h6>&copy 2025 All Rights Reserved.</h6>
         </div>
         </section>
     </div>
 
     <div class="container">
         <section id="about-me">
-            <nav class="left-nav">
-                <ul>
-                    <a href="#home" style="margin-right: 10px;">/ home</a>
-                    <a href="#about-me" style="text-decoration: underline; margin-right: 10px;">/ about-me</a>
-                    <a href="#projects" style="margin-right: 10px;">/ my-projects</a>
-                </ul>
-            </nav>
-            
-            <div style="display: block; align-items: center;">
-            <div class="margin-one">
-                <h3 class="enter" style="font-weight: bold;">Hi! I'm Tung-Yen (Anna) :)</h3>
-            </div>
+            <div style="display: block; margin-left: 1rem; margin-right: 1rem;">
+                <nav class="left-nav terminal-text">
+                    <ul>
+                        <a href="#home" class="terminal-link" style="margin-right: 10px;">/ home</a>
+                        <a href="#about-me" class="terminal-link" style="text-decoration: underline; margin-right: 10px;">/ about-me</a>
+                        <a href="#my-skills" class="terminal-link" style="margin-right: 10px;">/ my-skills</a>
+                        <a href="#projects" class="terminal-link" style="margin-right: 10px;">/ my-projects</a>
+                    </ul>
+                </nav>
+                
+                <div style="display: block; align-items: center;">
+                <div class="margin-one">
+                    <h3 class="enter" style="font-weight: bold;">Hi, I'm Tung-Yen (Anna)!</h3>
+                </div>
 
-            <div class="mt-2 margin-one">
-                <p class="right-enter">Graduate student at Cornell University, pursuing a degree in Information Science. <br>
-                Seeking Front-End and Software Developer opportunities for 2024.</p>
-            </div>
+                <div class="mt-2 margin-one">
+                    <div style="display: flex; gap: 2rem;">
+                        <div style="flex: 1;">
+                            <p style="margin-top: 1.2rem; font-size: 14px;">A recent graduate from Cornell University with a degree in Information Science. <br>
+                            Actively seeking Software Engineering roles in the United States starting in 2025. <br>
+                            Feel free to reach out — I'd love to connect!
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="mt-3 margin-one">
+                    <div class="contact-card">
+                        <div class="contact-info">
+                            <div class="contact-line mb-0">
+                                <img src="public/images/email.svg" alt="email" class="contact-icon" style="width: 18px; height: 18px;">
+                                <a href="mailto:annawang9909@gmail.com" class="contact-link" style="font-size: 14px;">annawang9909@gmail.com</a>
+                            </div>
+                            <div class="contact-line">
+                                <img src="public/images/linkedin.svg" alt="linkedin" class="contact-icon" style="width: 16px; height: 16px;">
+                                <a href="http://www.linkedin.com/in/tungyen-wang/" target="_blank" class="contact-link" style="font-size: 14px;">linkedin.com/in/tungyen-wang</a>
+                            </div>
+                            <div class="contact-line">
+                                <img src="public/images/github.svg" alt="github" class="contact-icon" style="width: 16px; height: 16px;">
+                                <a href="https://github.com/annaw-99" target="_blank" class="contact-link" style="font-size: 14px;">github.com/annaw-99</a>
+                            </div>
+                            <div class="contact-line">
+                                <img src="public/images/location.svg" alt="location" class="contact-icon" style="width: 20px; height: 20px;">
+                                <p style="font-size: 14px; margin: 0;">New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
             </div>
 
             <nav class="bottom-nav margin-two hide">
-                <ul style="display: flex; align-items: center;">
-                    <a class="no-dec" href="http://www.linkedin.com/in/tungyen-wang/" target="_blank" style="margin-right: 10px;">
-                        <img style="height: 1rem; filter: invert(75%);" src="public/images/linkedin.svg">
-                    </a>
-                    <a class="no-dec" href="https://github.com/annaw-99" target="_blank" style="margin-right: 10px;">
-                        <img style="height: 1rem; filter: invert(85%);" src="public/images/github.svg">
-                    </a>
-                    <a class="no-dec" style="color: rgb(198, 198, 198);">&copy 2024 All Rights Reserved.</a>
-                </ul>
+                <a class="no-dec" style="color: rgb(198, 198, 198);">&copy 2025 All Rights Reserved.</a>
             </nav>
 
         </section>
     </div>
 
     <div class="container">
-        <section id="projects">
-            <nav class="left-nav">
+        <section id="my-skills">
+            <nav class="left-nav terminal-text">
                 <ul>
-                    <a href="#home" style="margin-right: 10px;">/ home</a>
-                    <a href="#about-me" style="margin-right: 10px;">/ about-me</a>
-                    <a href="#projects" style="text-decoration: underline; margin-right: 10px;">/ my-projects</a>
+                    <a href="#home" class="terminal-link" style="margin-right: 10px;">/ home</a>
+                    <a href="#about-me" class="terminal-link" style="margin-right: 10px;">/ about-me</a>
+                    <a href="#my-skills" class="terminal-link" style="text-decoration: underline; margin-right: 10px;">/ my-skills</a>
+                    <a href="#projects" class="terminal-link" style="margin-right: 10px;">/ my-projects</a>
+                </ul>
+            </nav>
+
+            <div class="margin-one">
+                <h4 class="mb-3 enter" style="font-weight: bold;">My Skills</h4>
+                <p style="margin-top: 1.2rem; font-size: 14px;">
+                    I am a passionate and driven software engineer with a strong interest in building <br>
+                    scalable web applications, innovative tools, and user-centered designs. <br>
+                    I thrive on solving complex problems and creating impactful solutions.
+                </p>
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <span class="terminal-title">skills.json</span>
+                    </div>
+                    <div class="terminal-content">
+                        <pre><code>{
+    "programmingLanguages": ["Java", "Python", "JavaScript", "TypeScript"],
+    "dataAnalysis": ["SQL", "PostgreSQL", "R"],
+    "webDevelopment": [
+        "HTML/CSS",
+        "MongoDB",
+        "Vue.js",
+        "React.js",
+        "Next.js",
+        "Bootstrap",
+        "API"
+    ],
+    "tools": ["Azure", "Docker", "Git", "PowerBI", "Vercel"]
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="bottom-nav margin-two">
+                <ul style="display: flex; align-items: center;">
+                    <a class="no-dec" style="color: rgb(198, 198, 198);">&copy 2025 All Rights Reserved.</a>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+    <div class="container">
+        <section id="projects">
+            <nav class="left-nav terminal-text">
+                <ul>
+                    <a href="#home" class="terminal-link" style="margin-right: 10px;">/ home</a>
+                    <a href="#about-me" class="terminal-link" style="margin-right: 10px;">/ about-me</a>
+                    <a href="#my-skills" class="terminal-link" style="margin-right: 10px;">/ my-skills</a>
+                    <a href="#projects" class="terminal-link" style="text-decoration: underline; margin-right: 10px;">/ my-projects</a>
                 </ul>
             </nav>
 
@@ -181,22 +264,14 @@
             </div>
 
             <nav class="bottom-nav margin-two">
-                <ul style="display: flex; align-items: center;">
-                    <a class="no-dec" href="http://www.linkedin.com/in/tungyen-wang/" target="_blank" style="margin-right: 10px;">
-                        <img style="height: 1rem; filter: invert(75%);" src="public/images/linkedin.svg">
-                    </a>
-                    <a class="no-dec" href="https://github.com/annaw-99" target="_blank" style="margin-right: 10px;">
-                        <img style="height: 1rem; filter: invert(85%);" src="public/images/github.svg">
-                    </a>
-                    <a class="no-dec" style="color: rgb(198, 198, 198);">&copy 2024 All Rights Reserved.</a>
-                </ul>
+                <a class="no-dec" style="color: rgb(198, 198, 198);">&copy 2025 All Rights Reserved.</a>
             </nav>
             
         </section>
     </div>
     </div>
 
-    <script src="srcipt.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
