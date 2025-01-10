@@ -73,6 +73,10 @@ p {
     font-family: 'JetBrains Mono', monospace;
 }
 
+.large-text {
+    font-size: 12px !important;
+}
+
 .right-enter {
     animation: right-enter 3s ease-out forwards;
     font-family: 'JetBrains Mono', monospace;
