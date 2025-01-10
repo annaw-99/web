@@ -485,3 +485,29 @@ p {
         font-size: 14px !important;
     }
 }
+
+.typewriter {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 2s steps(11, end);
+}
+
+.typewriter::after {
+    content: '|';
+    position: absolute;
+    right: -10px;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from, to { opacity: 0 }
+    50% { opacity: 1 }
+}
