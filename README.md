@@ -1,6 +1,7 @@
 ## Personal Portfolio Website
 
-A minimalist, terminal-inspired portfolio website showcasing my projects and skills.
+A minimalist, terminal-inspired portfolio website showcasing my projects and skills.<br>
+(this page is only interactive on desktop view)
 
 <!-- ![home page image](https://github.com/user-attachments/assets/13096fbd-1e5a-41d0-b59e-5c17b4c7e05b) -->
 
