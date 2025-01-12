@@ -31,22 +31,6 @@ A minimalist, terminal-inspired portfolio website showcasing my projects and ski
 - Mobile-friendly design with breakpoints at 768px and 1300px
 - Project showcase with interactive hover states
 
-### Project Structure
-```
-portfolio/
-│
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles
-├── script.js           # JavaScript functionality
-│
-└── public/            
-    └── images/         # SVG icons and images
-        ├── email.svg
-        ├── github.svg
-        ├── linkedin.svg
-        └── location.svg
-```
-
 ### Setup
 1. Clone the repository
 2. Open `index.html` in your browser
@@ -56,5 +40,4 @@ portfolio/
 Feel free to reach out if you have any questions or suggestions!
 
 ### Acknowledgments
-- Icons used in this project are from [Icons8](https://icons8.com)
 - Font used is JetBrains Mono from [Google Fonts](https://fonts.google.com)
