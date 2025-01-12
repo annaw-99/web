@@ -103,6 +103,7 @@ p {
         typing 1.5s steps(16, end),
         blink-caret .75s step-end infinite;
     width: fit-content;
+    text-align: center;
 }
 
 .left-nav {
@@ -221,6 +222,10 @@ p {
 /* Mobile Screen Adjustments */
 @media (max-width: 768px) {
 
+    html {
+        overflow-x: hidden;
+    }
+
     .terminal-content {
         padding: 0.8rem;
     }
@@ -273,6 +278,11 @@ p {
     
     .scroll-arrow {
         font-size: 16px;
+    }
+
+    .hidden-content, .skills-content, .projects-content {
+        padding: 1rem;
+        text-align: center;
     }
 
 }
