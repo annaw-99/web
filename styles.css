@@ -133,10 +133,6 @@ p {
     margin-top: 0.5em;
 }
 
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
 .press-hint {
     color: #4EC9B0;
     animation: blink 1s infinite;
@@ -171,16 +167,6 @@ p {
     margin-left: 2px;
 }
 
-@keyframes aboutTyping {
-    from { height: 0 }
-    to { height: 100% }
-}
-
-@keyframes aboutBlinkCaret {
-    from, to { opacity: 0 }
-    50% { opacity: 1 }
-}
-
 .scroll-hint {
     position: absolute;
     bottom: 30px;
@@ -198,15 +184,29 @@ p {
     margin-left: 10px;
 }
 
-@keyframes fadeInOut {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 1; }
-}
-
 #projects .terminal-content {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@keyframes aboutTyping {
+    from { height: 0 }
+    to { height: 100% }
+}
+
+@keyframes aboutBlinkCaret {
+    from, to { opacity: 0 }
+    50% { opacity: 1 }
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
 }
 
 @keyframes typing {
@@ -217,74 +217,6 @@ p {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #4EC9B0 }
-}
-
-/* Mobile Screen Adjustments */
-@media (max-width: 768px) {
-
-    html {
-        overflow-x: hidden;
-    }
-
-    .terminal-content {
-        padding: 0.8rem;
-    }
-
-    .terminal-content pre {
-        font-size: 0.6rem;
-    }
-
-    #home .terminal-box {
-        width: 85%;
-        height: auto !important;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .output {
-        font-size: 1.2rem !important;
-    }
-
-    section {
-        padding: 0;
-        margin: 0;
-    }
-
-    .scroll-container {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    section:not(#home) .terminal-box {
-        width: 100%;
-        margin: 1rem auto;
-    }
-
-    #home .terminal-content .output {
-        font-size: 1.2rem !important;
-    }
-
-    .scroll-hint {
-        bottom: 40px !important;
-        width: 55%;
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .scroll-arrow {
-        font-size: 16px;
-    }
-
-    .hidden-content, .skills-content, .projects-content {
-        padding: 1rem;
-        text-align: center;
-    }
-
 }
 
 /* Desktop Screen Adjustments */
@@ -314,4 +246,30 @@ p {
     .big-title {
         font-size: 2rem !important;
     }
+}
+
+/* Mobile Screen Message */
+.mobile-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.mobile-warning {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    font-family: 'Consolas', monospace;
+    line-height: 1.6;
+}
+
+.mobile-warning p {
+    margin: 10px 0;
 }

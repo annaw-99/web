@@ -136,34 +136,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to check if device is mobile
 function isMobile() {
-    return window.innerWidth <= 768;
+    return window.innerWidth <= 1000;
 }
 
-// Initial check on page load
 document.addEventListener('DOMContentLoaded', function() {
     if (isMobile()) {
-        // Show all content immediately on mobile
-        const skillsContent = document.getElementById('skills-content');
-        const hiddenContent = document.getElementById('hidden-content');
-        const projectsContent = document.getElementById('projects-content');
+        const mobileMessage = document.createElement('div');
+        mobileMessage.className = 'mobile-message';
+        mobileMessage.innerHTML = `
+            <div class="mobile-warning">
+                <p>The mobile version of this site is currently under development.</p>
+                <p>Please visit using a desktop browser for the best experience.</p>
+            </div>
+        `;
+        document.body.appendChild(mobileMessage);
         
-        if (skillsContent) {
-            skillsContent.style.display = 'block';
-            skillsContent.classList.add('skills-typing-effect');
+        // Hide the main content
+        const mainContent = document.querySelector('main');
+        if (mainContent) {
+            mainContent.style.display = 'none';
         }
-        if (hiddenContent) {
-            hiddenContent.style.display = 'block';
-            hiddenContent.classList.add('typing-effect');
-        }
-        if (projectsContent) {
-            projectsContent.style.display = 'block';
-            projectsContent.classList.add('typing-effect');
-        }
-
-        // Hide all press hints on mobile
+        
+        // Hide all hints
         const hints = document.querySelectorAll('.press-hint, .p-hint, .blink-text');
         hints.forEach(hint => {
             hint.style.display = 'none';
         });
+        
+        return; 
     }
+    
 });

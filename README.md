@@ -1,9 +1,6 @@
 ## Personal Portfolio Website
 
-A minimalist, terminal-inspired portfolio website showcasing my projects and skills.<br>
-(this page is only interactive on desktop view)
-
-<!-- ![home page image](https://github.com/user-attachments/assets/13096fbd-1e5a-41d0-b59e-5c17b4c7e05b) -->
+A terminal-themed personal portfolio website built with HTML, CSS, and JavaScript.
 
 ### Technologies Used
 
@@ -13,32 +10,41 @@ A minimalist, terminal-inspired portfolio website showcasing my projects and ski
 - JavaScript
 - Bootstrap 5.3.3
 
-#### Design Features
-- Terminal-inspired UI elements
-- Responsive design for mobile and desktop
-- Smooth scroll snapping between sections
-- Interactive hover effects
-- Custom animations
-- JetBrains Mono font integration
-
 #### Development Tools
 - Git for version control
 - GitHub for repository hosting
 
-### Key Features
-- Single-page application with smooth section transitions
-- Terminal-style skills display with JSON formatting
-- Responsive contact card with hover effects
-- Mobile-friendly design with breakpoints at 768px and 1300px
-- Project showcase with interactive hover states
+### Features
 
-### Setup
+#### 🖥️ Desktop-Optimized Design
+- Terminal-inspired interface with monospace fonts and a dark theme
+- Smooth scrolling navigation between sections
+- Interactive elements with hover effects
+- Responsive layout for desktop screens
+- JetBrains Mono font integration
+
+#### 🎨 Visual Elements
+- Custom color scheme with terminal-inspired design
+- Blinking text animations
+- Smooth transitions and hover effects
+- Terminal-style typography
+
+### 🛠️ Development
+To run this project locally:
 1. Clone the repository
-2. Open `index.html` in your browser
-3. No build process required - pure HTML, CSS, and JavaScript
+2. Open `index.html` in your browser (no build process required - pure HTML, CSS, and JavaScript)
+3. For best experience, view on a desktop browser
 
 ### Contact
 Feel free to reach out if you have any questions or suggestions!
+
+### Browser Compatibility
+This website is optimized for desktop browsers with a minimum width of 1000px.
+
+### Usage
+Feel free to use this template for your own portfolio:
+- Make sure to replace all personal information and projects with your own content
+- Consider starring the repository if you find it helpful!
 
 ### Acknowledgments
 - Font used is JetBrains Mono from [Google Fonts](https://fonts.google.com)
