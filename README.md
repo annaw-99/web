@@ -29,7 +29,7 @@ A terminal-themed personal portfolio website built with HTML, CSS, and JavaScrip
 - Smooth transitions and hover effects
 - Terminal-style typography
 
-### 🛠️ Development
+### Development
 To run this project locally:
 1. Clone the repository
 2. Open `index.html` in your browser (no build process required - pure HTML, CSS, and JavaScript)
