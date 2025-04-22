@@ -82,29 +82,29 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const projects = {
                 1: {
+                    title: "HUEY (hugh-eey)",
+                    description: "a full-stack waitlist platform. ",
+                    tech: "tech stack: Next.js | Prisma | NextAuth.js",
+                    links: [
+                        { text: "[view github repo] ", url: "https://github.com/annaw-99/nextjs-hackathon" },
+                        { text: "[view website]", url: "https://nextjs-hack.vercel.app/" }
+                    ]
+                },
+                2: {
+                    title: "THE RAG CHATBOT",
+                    description: "a chatbot with custom (file-upload) knowledge base.",
+                    tech: "tech stack: Python | Docker | Streamlit | Langchain",
+                    links: [
+                        { text: "[view github repo]", url: "https://github.com/annaw-99/RAG-chatbot" }
+                    ]
+                },
+                3: {
                     title: "THE WEB",
                     description: "a (this) personal website.",
                     tech: "tech stack: HTML | CSS | JavaScript",
                     links: [
                         { text: "[view github repo] ", url: "https://github.com/annaw-99/web" },
                         { text: "[view website]", url: "https://annaw-99.github.io/web/" }
-                    ]
-                },
-                2: {
-                    title: "THE TO-DO LIST",
-                    description: "a simple to-do list with calendar integration.",
-                    tech: "tech stack: Next.js | Tailwind CSS | JavaScript",
-                    links: [
-                        { text: "[view github repo] ", url: "https://github.com/annaw-99/to-do-list" },
-                        { text: "[view website]", url: "https://to-do-list-annaw-99s-projects.vercel.app/" }
-                    ]
-                },
-                3: {
-                    title: "THE RAG CHATBOT",
-                    description: "a chatbot with custom (file-upload) knowledge base.",
-                    tech: "tech stack: Python | Docker | Streamlit | Langchain",
-                    links: [
-                        { text: "[view github repo]", url: "https://github.com/annaw-99/RAG-chatbot" }
                     ]
                 }
             };
